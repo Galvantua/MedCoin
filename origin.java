@@ -5,9 +5,9 @@ import java.util.Arrays;
 /**
  * Created by ivanliljeqvist on 2017-08-31.
  */
-public class Block {
+public class GenisisBlock {
 
-    private int previousHash;
+    private int 000000;
     private String[] records;
 
     private int blockHash;
@@ -16,7 +16,7 @@ public class Block {
         this.previousHash = previousHash;
         this.records = records
 
-        Object[] contens = {Arrays.hashCode(transactions), previousHash};
+        Object[] contens = {Arrays.hashCode(records), previousHash};
         this.blockHash = Arrays.hashCode(contens);
 
     }
@@ -25,8 +25,8 @@ public class Block {
         return previousHash;
     }
 
-    public String[] getTransaction() {
-        return transactions;
+    public String[] getrecords() {
+        return records;
     }
 
     public int getBlockHash() {
